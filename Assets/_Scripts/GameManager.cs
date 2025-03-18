@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : SingletonMonoBehavior<GameManager>
 {
@@ -8,6 +9,8 @@ public class GameManager : SingletonMonoBehavior<GameManager>
 
     private int currentBrickCount;
     private int totalBrickCount;
+
+    public string nextScene;
 
     private void OnEnable()
     {
@@ -34,7 +37,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         // add camera shake here
         currentBrickCount--;
         Debug.Log($"Destroyed Brick at {position}, {currentBrickCount}/{totalBrickCount} remaining");
-        if(currentBrickCount == 0) SceneHandler.Instance.LoadNextScene();
+        if(currentBrickCount == 0) SceneManager.LoadScene(nextScene);
     }
 
     public void KillBall()
