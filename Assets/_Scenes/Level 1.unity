@@ -578,6 +578,7 @@ MonoBehaviour:
   maxLives: 3
   ball: {fileID: 2054714181}
   bricksContainer: {fileID: 1170594424}
+  ballParticle: {fileID: 5722222975362000638, guid: 82e137ab25454a54a8331fa39b2a38a1, type: 3}
 --- !u!1001 &443665624
 PrefabInstance:
   m_ObjectHideFlags: 0

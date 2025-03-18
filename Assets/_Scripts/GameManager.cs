@@ -8,7 +8,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
 
     private int currentBrickCount;
     private int totalBrickCount;
-
+    public GameObject ballParticle;
     private void OnEnable()
     {
         InputHandler.Instance.OnFire.AddListener(FireBall);
@@ -31,6 +31,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     {
         // fire audio here
         // implement particle effect here
+        Instantiate(ballParticle, position, transform.rotation);
         // add camera shake here
         currentBrickCount--;
         Debug.Log($"Destroyed Brick at {position}, {currentBrickCount}/{totalBrickCount} remaining");
