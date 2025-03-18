@@ -27,7 +27,7 @@ public class Ball : MonoBehaviour
             if (!audioPaddle.isPlaying)
                 audioPaddle.Play();
         }
-        if (!audioBounce.isPlaying)
+        else 
             audioBounce.Play();
     }
 
