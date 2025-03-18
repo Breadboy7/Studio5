@@ -2454,6 +2454,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 329927099c3f0824b9a9bd04beac8c6d, type: 3}
+--- !u!82 &3329237856228217461 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6506995927528356875, guid: 329927099c3f0824b9a9bd04beac8c6d, type: 3}
+  m_PrefabInstance: {fileID: 3329237856228217460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4561635119993004753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2510,6 +2515,10 @@ PrefabInstance:
       propertyPath: ballAnchor
       value: 
       objectReference: {fileID: 1882589128}
+    - target: {fileID: 6846597512200348566, guid: 70365e4fb3127d44db431487cd761c1c, type: 3}
+      propertyPath: audioPaddle
+      value: 
+      objectReference: {fileID: 3329237856228217461}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

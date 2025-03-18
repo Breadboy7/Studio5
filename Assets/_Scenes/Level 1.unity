@@ -1346,6 +1346,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 809835417121010773, guid: a6b19c919c45ec24c982db98308cb5b7, type: 3}
   m_PrefabInstance: {fileID: 1164001274}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1169276958 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6506995927528356875, guid: 329927099c3f0824b9a9bd04beac8c6d, type: 3}
+  m_PrefabInstance: {fileID: 1783415364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1170594423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,10 +2072,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paddle
       objectReference: {fileID: 0}
-    - target: {fileID: 6455849453923345546, guid: 329927099c3f0824b9a9bd04beac8c6d, type: 3}
-      propertyPath: ball
-      value: 
-      objectReference: {fileID: 2054714180}
     - target: {fileID: 8509313780869582024, guid: 329927099c3f0824b9a9bd04beac8c6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2301,39 +2302,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6846597512200348566, guid: 70365e4fb3127d44db431487cd761c1c, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 2054714182}
-    - target: {fileID: 6846597512200348566, guid: 70365e4fb3127d44db431487cd761c1c, type: 3}
       propertyPath: ballAnchor
       value: 
       objectReference: {fileID: 269931761}
+    - target: {fileID: 6846597512200348566, guid: 70365e4fb3127d44db431487cd761c1c, type: 3}
+      propertyPath: audioPaddle
+      value: 
+      objectReference: {fileID: 1169276958}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70365e4fb3127d44db431487cd761c1c, type: 3}
---- !u!1 &2054714180 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2539175397210287971, guid: 70365e4fb3127d44db431487cd761c1c, type: 3}
-  m_PrefabInstance: {fileID: 2054714179}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2054714181 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6846597512200348566, guid: 70365e4fb3127d44db431487cd761c1c, type: 3}
   m_PrefabInstance: {fileID: 2054714179}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054714180}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01bd3e30eea244ddb8e3236978196fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &2054714182 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 8959031048966596842, guid: 70365e4fb3127d44db431487cd761c1c, type: 3}
-  m_PrefabInstance: {fileID: 2054714179}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
