@@ -13,10 +13,11 @@ public class Ball : MonoBehaviour
     private bool isBallActive;
     public AudioSource audioPaddle;
     public AudioSource audioBounce;
+    public AudioSource blockHit;
 
     private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.CompareTag("Paddle"))
+        if (other.gameObject.CompareTag("Paddle"))
         {
             Vector3 directionToFire = (transform.position - other.transform.position).normalized;
             float angleOfContact = Vector3.Angle(transform.forward, directionToFire);
@@ -27,7 +28,9 @@ public class Ball : MonoBehaviour
             if (!audioPaddle.isPlaying)
                 audioPaddle.Play();
         }
-        else 
+        else if (other.gameObject.CompareTag("Bricks"))
+            blockHit.Play();
+        else
             audioBounce.Play();
     }
 

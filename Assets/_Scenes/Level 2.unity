@@ -2224,6 +2224,7 @@ MonoBehaviour:
   maxLives: 3
   ball: {fileID: 4561635119993004754}
   bricksContainer: {fileID: 796630123}
+  ballParticle: {fileID: 5722222975362000638, guid: 82e137ab25454a54a8331fa39b2a38a1, type: 3}
   nextScene: MainMenu
 --- !u!1001 &1708692028
 PrefabInstance:
