@@ -11,6 +11,8 @@ public class Ball : MonoBehaviour
     [SerializeField] private Rigidbody rb;
 
     private bool isBallActive;
+    public AudioSource audioPaddle;
+    public AudioSource audioBounce;
 
     private void OnCollisionEnter(Collision other)
     {
@@ -22,7 +24,11 @@ public class Ball : MonoBehaviour
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
             rb.AddForce(directionToFire * returnSpeed, ForceMode.Impulse);
+            if (!audioPaddle.isPlaying)
+                audioPaddle.Play();
         }
+        else 
+            audioBounce.Play();
     }
 
     public void ResetBall()
