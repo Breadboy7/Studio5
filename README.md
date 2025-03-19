@@ -1,6 +1,7 @@
 Repository for studio 5 COSC416
 
 Charlie Schwebius - Particle effect
+
 Brett McKenzie - Sound Effects and Screen Shake
 
 
