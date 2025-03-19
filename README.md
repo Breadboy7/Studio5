@@ -1,4 +1,4 @@
-#Repository for studio 5 COSC416
+**Repository for studio 5 COSC416**
 
 Charlie Schwebius - Particle effect
 
